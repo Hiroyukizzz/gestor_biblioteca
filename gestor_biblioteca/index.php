@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
 <div class="container">
+        <div>
+            <?php 
+                if(isset($_GET['validation'])){
+                    echo "<p class=error_container>Usuário ou senha incorretos</p>";
+                }
+            ?>
+        </div>
     <h2 class="mt-5">Login</h2>
-    <form action="create.php" method="post">
+    <form action="verification.php" method="post">
         <div class="form-group">
             <label for="Email">Email</label>
             <input type="email" name="Email" class="form-control" id="Email" required>
@@ -19,9 +26,9 @@
             <label for="Senha">Senha</label>
             <input type="password" name="Senha" class="form-control" id="Senha" required pattern=".{6,}">
         </div>
-        
-            <a href="home_page/index.php"><button type="submit" class="btn btn-primary">Login</button></a>
-               
+
+        <button type="submit" class="btn btn-primary">Login</button>
+
         <button type="button" id="register" class="btn btn-primary btn-register">
             <a href="register/index.php">Registrar</a>
         </button> 

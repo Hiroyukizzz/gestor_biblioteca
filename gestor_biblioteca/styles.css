@@ -104,3 +104,12 @@ h2 {
     background-color: #5a6268;
     border-color: #545b62;
 }
+.error_container{
+    color: black;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+}
