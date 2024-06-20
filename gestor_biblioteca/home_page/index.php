@@ -40,16 +40,16 @@
             </div>
             <div class="form-group">
                 <label for="anoDePublicacao">Ano de publicação</label>
-                <input type="text" name="anoDePublicacao" class="form-control" id="anoDePublicacao" required>
+                <input type="date" name="anoDePublicacao" class="form-control" id="anoDePublicacao" required>
             </div>
             <div class="form-group">
                 <label for="editora">Editora</label>
                 <input type="text" name="editora" class="form-control" id="editora" required>
             </div>
-            <button type="submit" class="btn btn-primary">Cadastrar lirvro</button>
+            <button type="submit" class="btn btn-primary">Cadastrar livro</button>
         </form>
         <h2 class="mt-5">Livros Cadastrados </h2>
-        <?php include __DIR__ . '/lista.php'; ?>
+        <?php include __DIR__ . '/read.php'; ?>
     </div>
 </body>
 </html>

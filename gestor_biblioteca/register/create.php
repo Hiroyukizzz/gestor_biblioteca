@@ -2,7 +2,7 @@
 include 'config.php';
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $nome = $_POST["nome"];
+    $nome = $_POST["emai"];
     $sobrenome = $_POST["sobrenome"];
     $telefone = $_POST["telefone"];
     $endereco = $_POST["endereco"];

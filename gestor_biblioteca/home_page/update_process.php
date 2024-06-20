@@ -6,11 +6,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $titulo = $_POST["titulo"];       // Obtém o valor do campo nome
     $autor = $_POST["autor"]; // Obtém o valor do campo sobrenome
     $genero = $_POST["genero"];   // Obtém o valor do campo telefone
-    $ano_publicacao = $_POST["ano_publicacao"]; 
+    $anoDePublicacao = $_POST["anoDePublicacao"]; 
     $editora = $_POST["editora"]; 
 
     // Atualiza os dados na tabela pessoas
-    $sql = "UPDATE livros SET id='$id', titulo='$titulo', autor='$autor', genero='$genero', ano_publicacao='$ano_publicacao', editora='$editora' WHERE id=$id";
+    $sql = "UPDATE livros SET id='$id', titulo='$titulo', autor='$autor', genero='$genero', anoDePublicacao='$anoDePublicacao', editora='$editora' WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: index.php");  // Redireciona para a página principal se a atualização for bem-sucedida

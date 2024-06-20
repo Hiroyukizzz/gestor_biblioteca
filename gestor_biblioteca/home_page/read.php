@@ -1,12 +1,12 @@
 <?php
-include '../config.php';
+include 'config.php';
 
-$sql = "SELECT * FROM pessoas";
+$sql = "SELECT * FROM livros";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {  // Verifica se há registros retornados
     echo '<table class="table table-bordered">';
-    echo '<tr><th>ID</th><th>Nome</th><th>Sobrenome</th><th>Telefone</th><th>Ação</th></tr>';
+    echo '<tr><th>ID</th><th>Titulo</th><th>Autor</th><th>Gênero</th><th>Data Publicação</th><th>Editora</th><th>Ação</th></tr>';
     while ($row = $result->fetch_assoc()) {  // Loop através de cada registro retornado
         echo '<tr>';
         echo '<td>' . $row["id"] . '</td>';

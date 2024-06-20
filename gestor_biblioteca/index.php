@@ -19,9 +19,9 @@
             <label for="Senha">Senha</label>
             <input type="password" name="Senha" class="form-control" id="Senha" required pattern=".{6,}">
         </div>
-        <button type="submit" class="btn btn-primary">
-            <a href="home/index.php">Login</a>
-        </button>          
+        
+            <a href="home_page/index.php"><button type="submit" class="btn btn-primary">Login</button></a>
+               
         <button type="button" id="register" class="btn btn-primary btn-register">
             <a href="register/index.php">Registrar</a>
         </button> 
@@ -32,7 +32,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         const registerButton = document.getElementById('register');
         registerButton.addEventListener('click', function() {
-            window.location.href = 'users/index.php';
+            window.location.href = 'register/index.php';
         });
     });
 </script>
